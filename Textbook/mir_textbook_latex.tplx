@@ -1,0 +1,44 @@
+((= IPython input/output style =))
+
+((*- extends 'report.tplx' -*))
+
+
+((* block author *))
+\author{Alexander Schindler}
+((* endblock author *))
+
+%===============================================================================
+% Input
+%===============================================================================
+
+((* block input scoped *))
+    ((( add_prompt(cell.source | highlight_code(strip_verbatim=True), cell, '', 'incolor') )))
+((* endblock input *))
+
+((* block output_group *))
+((*- if cell.metadata.hide_output -*))
+((*- else -*))
+((( super() )))
+((*- endif -*))
+((* endblock output_group *))
+
+%===============================================================================
+% Output
+%===============================================================================
+
+((* block execute_result scoped *))
+    ((*- for type in output.data | filter_data_type -*))
+        ((*- if type in ['text/plain']*))
+            ((( add_prompt(output.data['text/plain'] | escape_latex, cell, 'Out', 'outcolor') )))
+        ((* else -*))
+			((( super() )))
+        ((*- endif -*))
+    ((*- endfor -*))
+((* endblock execute_result *))
+
+((* block input_group *))
+((*- if cell.metadata.hide_input -*))
+((*- else -*))
+((( super() )))
+((*- endif -*))
+((* endblock input_group *))
