@@ -1,6 +1,6 @@
-![TUWien Logo](./Textbook/img/TU_signet09_small.png)
-![TUWien Logo](./Textbook/img/ifs_logo_new.gif)
-![TUWien Logo](./Textbook/img/mir_logo3.jpg)
+![TUWien Logo](./img/TU_signet09_small.png)
+![TUWien Logo](./img/ifs_logo_new.gif)
+![TUWien Logo](./img/mir_logo3.jpg)
 
 # Overview
 
