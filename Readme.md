@@ -1,4 +1,4 @@
-![TUWien Logo](./Textbook/img/TU_signet09.png | width=100)
+![TUWien Logo](./Textbook/img/TU_signet09.png)
 
 # Overview
 
