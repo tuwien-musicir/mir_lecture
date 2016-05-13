@@ -6,6 +6,13 @@
 
 Please help us to improve this script. If you discover errors, typos or other things we should correct or add to to the content, please create a ticket on the Github repository.
 
+The interactive notebook is used in the lecture talk to demonstrate audio feature extraction, to visualize feature behavior as well as to demonstrate similarity retrieval and classification.
+
+A nbconvert template is provided to convert the Notebook into a structured pdf. In the pdf-version all input code-cells are removed to improve readability. Only the outputs and charts are kept. You can find a converted pdf in the [converted_versions](https://github.com/tuwien-musicir/mir_lecture/tree/master/Textbook/converted_versions) directory.
+
+Some parts are still work in progress. They are mentioned during the lecture and will be added to this textbook soon.
+
+
 ## Authors
 
 ### Alexander Schindler
